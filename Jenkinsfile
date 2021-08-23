@@ -10,7 +10,7 @@ node('master')
   {
     sh 'mvn package'
   } 
-  stage('ContinuousDeployment') 
+  /*stage('ContinuousDeployment') 
   {
     sh 'scp /home/vagrant/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war vagrant@10.0.0.51:/var/lib/tomcat7/webapps/qaenv.war'
   }
@@ -23,7 +23,7 @@ node('master')
   {
       input message: 'Waiting for approval !', submitter: 'Venu'
     sh 'scp /home/vagrant/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war vagrant@10.0.0.52:/var/lib/tomcat7/webapps/prodenv.war'
-  }
+  }*/
   
   
   
